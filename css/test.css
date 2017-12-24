@@ -1,0 +1,70 @@
+body {
+  height: 100%;
+  font-family: 'Roboto Slab', serif;
+  background-color: #EFEFEF;
+}
+
+.intern_nav {
+  background: linear-gradient(to right, #3399ff 0%, #003399 100%);
+}
+
+.intern_btn {
+  background-color: Transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+  color: white;
+}
+
+.intern_modal {
+  position: relative;
+  margin-top: 23px;
+  pointer-events: none;
+  padding-left: 120px;
+  padding-right: 120px;
+}
+
+.intern_pageMovement {
+  margin-top: 20px;
+  vertical-align: top;
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+.col-sm-12 {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.btn-light {
+  background-color: white;
+}
+
+.btn-lg, .btn-group-lg>.btn {
+  padding: 1.2rem 1.2rem;
+  padding-top: 25px;
+  font-size: 1.00rem;
+  line-height: 1.5;
+  border-radius: 0.65rem !important;
+  text-align: left;
+  padding-left: 40px;
+}
+
+.btn-group>.btn:hover, .btn-group-vertical>.btn:hover {
+  z-index: 2;
+  background-color: #EEEFFB;
+  border: 1px solid #6666FF;
+}
+
+#result {
+  height: 100px;
+  text-align: center;
+  font-size: 75px;
+}
+
+#quiz-timer {
+  font-family: 'Roboto Slab', serif;
+  color: white;
+}

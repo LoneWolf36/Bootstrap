@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <!-- Bootstrap core CSS and JS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
+  <!--  Custom CSS -->
+  <link rel="stylesheet" type="text/css" href="css/test.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+  <title>Quiz</title>
+</head>
+
+<body onload="hidePrev()">
+  <div class="container-fluid" id="mainContainer">
+    <nav class="navbar navbar-light intern_nav justify-content-between">
+      <a class="navbar-brand"><span id="quiz-timer"></span></a>
+      <button class="btn intern_btn btn-lg" id="subTest" type="submit">SUBMIT TEST</button>
+    </nav>
+    <div class="intern_modal container-fluid">
+      <div class="modal-content border-0 intern_rounded">
+        <div class="modal-header">
+          <div class="col-sm-8">
+            Q
+            <span id="questionNum"></span>
+          </div>
+          <div>
+            <span class="badge badge-pill badge-success font-weight-light">+1.00</span>
+            <span class="badge badge-pill badge-danger font-weight-light">-0.25</span>
+          </div>
+        </div>
+        <div class="modal-body">
+          <span id="question"></span>
+        </div>
+      </div>
+    </div>
+    <div class="intern_pageMovement text-center">
+      <div class="btn-group-vertical btn-group-lg col-sm-12" data-toggle="buttons">
+        <label class="btn btn-light">
+            <input type="radio" name="options" value="1" autocomplete="off">
+            <span id="option1">
+            </span>
+        </label>
+
+        <label class="btn btn-light">
+            <input type="radio" name="options" value="2" autocomplete="off">
+            <span id="option2">
+            </span>
+        </label>
+
+        <label class="btn btn-light">
+            <input type="radio" name="options" value="3" autocomplete="off">
+            <span id="option3">
+            </span>
+        </label>
+
+        <label class="btn btn-light">
+            <input type="radio" name="options" value="4" autocomplete="off">
+            <span id="option4">
+            </span>
+        </label>
+      </div>
+    </div>
+    <div class="row intern_pageMovement">
+      <button type="button" name="button" class="btn btn-primary" id="previousBtn">Previous</button>
+      <button type="button" name="button" class="btn btn-primary" id="nextBtn">Next</button>
+    </div>
+  </div>
+
+  <div class="container" id="result">
+  </div>
+
+  <script type="text/javascript" src="js/test.js"></script>
+</body>
+
+</html>
