@@ -29,8 +29,8 @@ body {
 .intern_pageMovement {
   margin-top: 20px;
   vertical-align: top;
-  padding-left: 80px;
-  padding-right: 80px;
+  margin-left: 80px;
+  margin-right: 80px;
 }
 
 .col-sm-12 {
